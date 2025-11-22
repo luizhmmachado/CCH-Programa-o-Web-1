@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+    color: black;
+}
+
+#hotbar{
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+#rodape{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+
+}
+
+.gridCaixas{
+    display: grid;
+    width: 50%;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 475px;
+}
+
+.caixa{
+    background-color: blue;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+
+.lateral{
+    display: inline-block;
+    border-radius: 15px;
+    width: 50%;
+    background-color: blueviolet;
+    text-align: center;
+}
