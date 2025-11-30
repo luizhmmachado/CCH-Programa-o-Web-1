@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <head>
   <title>Administração Placeholder</title>
   <link rel="stylesheet" href="style.css">
@@ -5,7 +7,7 @@
 </head>
 
 <body>
-  <nav id="hotbar">
+  <nav id="navbar">
     <img height="72px" src="../logo.png" alt="Logo site"></img>
     <h1>Agro Bridge - ONG</h1>
   </nav>
@@ -14,14 +16,22 @@
 
     <div class="container">
       <div class="gridCaixas">
-        <div class="caixa">Numero de usuarios</div>
-        <div class="caixa">Operações Realizadas</div>
-        <div class="caixa">Bezerros doados</div>
-        <div class="caixa">Demandas em Geral</div>
+        <div class="caixa">
+          <canvas id="chart-usuarios"></canvas>
+        </div>
+        <div class="caixa">
+          <canvas id="chart-brindes"></canvas>
+        </div>
+        <div class="caixa">
+          <canvas id="chart-bezerros-doados"></canvas>
+        </div>
+        <div class="caixa">
+          <canvas id="chart-bezerros-demanda"></canvas>
+        </div>
       </div>
-      <div class="lateral">Descrição da Caixa Selecionada</div>
     </div>
-
   </div>
-  <div id="rodape">Rodape</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="index.js"></script>
 </body>
