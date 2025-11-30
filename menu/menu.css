@@ -1,0 +1,37 @@
+@import "../variaveis.css";
+
+#menu-lateral {
+  min-width: 200px;
+  background-color: var(--cor-secundaria);
+  flex: 1;
+  top: 72px;
+  display: flex;
+  flex-direction: column;
+
+
+  a {
+    text-decoration: none;
+    transition: all 0.2s;
+    font-size: 20px;
+    padding: 16px 0px 16px 32px;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+#menu {
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+
+@media (min-width: 900px) {
+  #menu {
+    display: none;
+  }
+}
